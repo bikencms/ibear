@@ -73,7 +73,7 @@
                         <div class="process-inner">
                             <img class="margin-bottom10px" src="{{ url('assets/images/user-registry.svg') }}" alt="User Registry" width="70">
                             <p>Đăng ký</p>
-                            <p>Chỉ với 1 bước đơn giản</p>
+                            <p>Chỉ với 1 bước đơn</p>
                         </div>
                     </div><div class="col-4 padding20px inline-block">
                         <div class="process-inner">
