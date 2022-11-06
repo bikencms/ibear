@@ -55,17 +55,22 @@ header nav ul.icon-user, header nav ul.icon-cart {
     padding: 10px 0;
 }
 
-header nav ul li.icon a ul li img {
+.icon-user li {
+    vertical-align: middle;
+}
+
+header nav ul li.icon ul li img {
     width: 30px;
     margin-right: 10px;
 }
 
-header nav ul li.icon a img {
+header nav ul li.icon {
     color: #FFECEF;
 }
 
 .vision {
     padding: 100px 0;
+    text-align: center;
 }
 
 main .vision h1 {
@@ -73,6 +78,7 @@ main .vision h1 {
     text-align: center;
     font-size: 70px;
     margin-top: 50px;
+    display: inline-block
 }
 
 main .vision p {

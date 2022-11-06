@@ -10,45 +10,15 @@
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-R0GX9KF0TH"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-        gtag('config', 'G-R0GX9KF0TH');
+            gtag('config', 'G-R0GX9KF0TH');
         </script>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li class="link">
-                        <a href="#">TRANG CHỦ</a>
-                    </li>
-                    <li class="link shop">
-                        <a href="#">CỬA HÀNG</a>
-                    </li>
-                    <li class="logo">
-                        <a href="#"><img src="{{ url('assets/images/logo.png') }}" alt="Logo"></a>
-                    </li>
-                    <li class="icon user">
-                        <a href="#">
-                            <ul class="icon-user">
-                                <li><img src="{{ url('assets/images/user.svg') }}" alt="User"></li>
-                                <li>ĐĂNG KÝ/ĐĂNG NHẬP</li>
-                            </ul>
-                        </a>
-                    </li>
-                    <li class="icon">
-                        <a href="#">
-                            <ul class="icon-cart">
-                                <li><img src="{{ url('assets/images/cart.svg') }}" alt="Cart"></li>
-                                <li>GIỎ HÀNG</li>
-                            </ul>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        @include('layouts.head')
         <main>
             <section class="vision">
                 <h1 class="margin-bottom10px">"Cũ người, mới ta"</h1>

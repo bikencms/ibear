@@ -1,0 +1,135 @@
+body {
+    font-family: 'Roboto';
+    background: url('../images/Background.png') no-repeat center center;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+#app {
+    position: relative;
+    height: 650px;
+}
+
+.py-4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 850px;
+    border-radius: 0 5px 5px 0;
+    background-color: #FFF;
+}
+
+.container {
+    height: 550px;
+    vertical-align: middle;
+}
+
+.container-left {
+    width: 40%;
+    padding: 150px 40px;
+    text-align: center;
+}
+
+.container-left h2 {
+    color: #FFF;
+    font-size: 35px; 
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.container-left p {
+    color: #FFF;
+    font-size: 18px; 
+    margin: 30px 0;
+}
+
+.button-login {
+    background-color: #FF8FB1;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.button-login:hover {
+    border: 1px solid #FCE2DB;
+}
+
+.container-right {
+    width: 60%;
+}
+
+.c-background {
+    background-color: #FF8FB1;
+    background-size: cover;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.container-padding {
+    padding: 100px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card-header {
+    color: #FF8FB1;
+    font-size: 35px; 
+    font-weight: 500;
+}
+
+.form-control {
+    box-sizing: border-box;
+    display: inline-block;
+    color: #432C7A;
+    width: 100%;
+    background-color: #f4f4f4;
+    border: 1px solid transparent;
+    padding: 14px 6px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.social-register {
+    margin-top: 10px;
+}
+
+.social-register img {
+    width: 30px;
+}
+
+.social-register p {
+    margin-top: 30px;
+}
+
+button.register {
+    background-color: #FF8FB1;
+    color: #FFF;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button.register:hover {
+    background-color: #f899b6;
+}
+
+.margintop30px {
+    margin-top: 30px;
+}
