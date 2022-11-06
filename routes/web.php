@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use Illuminate\Support\Facades\Route;
@@ -17,8 +18,6 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/register', [RegisteredUserController::class, 'create']);
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
 Route::get('/login', [LoginController::class, 'login']);
 require __DIR__.'/auth.php';

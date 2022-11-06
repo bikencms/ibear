@@ -6,9 +6,8 @@
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
-        <title>{{ config('app.name', 'ibear.vn') }}</title>
-
+        <title>{{ ucfirst(Route::currentRouteName())}}</title>
+        <link rel="stylesheet" href="{{ url('assets/css/reset.css') }}">
         <link rel="stylesheet" href="{{ url('assets/css/app.css') }}">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-R0GX9KF0TH"></script>
@@ -22,9 +21,7 @@
     </head>
     <body>
         <div id="app">
-            <main class="py-4">
-                @yield('content')
-            </main>
+            @yield('content')
         </div>
     </body>
 </html>
