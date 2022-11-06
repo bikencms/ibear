@@ -7,7 +7,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'ibear.vn') }}</title>
 
         <link rel="stylesheet" href="{{ url('assets/css/app.css') }}">
         <!-- Google tag (gtag.js) -->
