@@ -4,7 +4,7 @@
 <div class="container container-left inline-block c-background">
     <h2>CHÀO BẠN!</h2>
     <p>Nếu bạn chưa có tài khoản, hãy</p>
-    <a class="button-login" href="{{ route('login') }}">ĐĂNG KÝ</a>
+    <a class="button-login" href="{{ route('register') }}">ĐĂNG KÝ</a>
 </div><div class="container container-right inline-block container-padding text-center">
     <div class="row justify-content-center">
         <div class="col-md-8">
