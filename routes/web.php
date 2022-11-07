@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/register', [RegisteredUserController::class, 'create']);
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
 Route::get('/login', [LoginController::class, 'login']);
 require __DIR__.'/auth.php';

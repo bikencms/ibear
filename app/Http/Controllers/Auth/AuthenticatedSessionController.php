@@ -21,7 +21,7 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        return response()->noContent();
+        return redirect('dashboard');
     }
 
     /**
@@ -38,6 +38,6 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-        return response()->noContent();
+        return redirect('');
     }
 }
