@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
     <main class="py-4">
         <div class="container container-left inline-block c-background">
