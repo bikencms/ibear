@@ -20,25 +20,7 @@
 </head>
 <body>
 @include('layouts.head')
-
-</main>
 <footer class="text-center">
-    <!-- <nav>
-        <ul>
-            <li class="link">
-                <a href="#">TRANG CHỦ</a>
-            </li>
-            <li class="link shop">
-                <a href="#">GIỚI THIỆU</a>
-            </li>
-            <li class="link shop">
-                <a href="#">GÓP Ý</a>
-            </li>
-            <li class="link shop">
-                <a href="#">LIÊN HỆ</a>
-            </li>
-        </ul>
-    </nav> -->
     <p>© <?= date('Y') ?> - Toàn bộ bản quyền thuộc ibear.vn</p>
 </footer>
 </body>
