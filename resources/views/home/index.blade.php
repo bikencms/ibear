@@ -19,7 +19,23 @@
     </head>
     <body>
         @include('layouts.head')
-
+        <main>
+            <section class="vision">
+                <h1 class="margin-bottom10px">"Má biết, má dzui đó"</h1>
+                <p>Do nhu cầu mua sắm ngày càng tăng <br> mà các mặt hàng 
+                    trên thị trường không đáp ứng được <br> nhu cầu người tiêu dùng 
+                    như: giá cả, chất lượng,... <br>Chính vì thế ibear.vn ra đời.
+                </p>
+            </section>
+            <section class="vision">
+                <div class="col-6 background-purple inline-block text-center inner-vision color-pink">
+                    <p class="title width-title">Nếu bạn muốn bán hàng trên website của tôi, hãy đăng ký shop của bạn</p>
+                    <a class="button color-pink background-button-purple" href="#">ĐĂNG KÝ</a>
+                </div><div class="col-6 background-pink inline-block text-center inner-vision color-purple">
+                    <p class="title width-title">Nếu bạn chỉ muốn mua hàng, hãy đến với cửa hàng của chúng tôi</p>
+                    <a class="button color-pink background-button-pink" href="#">CỬA HÀNG</a>
+                </div>   
+            </section>
             <section class="vision text-center">
                 <h2 class="margin-bottom10px">Quy trình bán hàng/mua hàng vô cùng đơn giản</h2>
                 <div class="process">

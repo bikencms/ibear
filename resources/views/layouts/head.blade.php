@@ -1,14 +1,11 @@
 <header>
         <nav>
             <ul>
-                <li class="link">
-                    <a href="#">TRANG CHỦ</a>
+                <li class="logo">
+                    <a href="#"><img src="{{ url('assets/images/logo_black.png') }}" alt="Logo"></a>
                 </li>
                 <li class="link shop">
                     <a href="#">CỬA HÀNG</a>
-                </li>
-                <li class="logo">
-                    <a href="#"><img src="{{ url('assets/images/logo.png') }}" alt="Logo"></a>
                 </li>
                 <li class="icon user">
                     <ul class="icon-user">
@@ -29,14 +26,6 @@
                             <li><a href="{{ route('register') }}">ĐĂNG KÝ</a>/<a href="{{ route('login') }}">ĐĂNG NHẬP</a></li>
                         @endguest
                     </ul>
-                </li>
-                <li class="icon">
-                    <a href="#">
-                        <ul class="icon-cart">
-                            <li><img src="{{ url('assets/images/cart.svg') }}" alt="Cart"></li>
-                            <li>GIỎ HÀNG</li>
-                        </ul>
-                    </a>
                 </li>
             </ul>
         </nav>
