@@ -21,6 +21,10 @@ Route::get('/register', [RegisteredUserController::class, 'create']);
 Route::get('/login', [LoginController::class, 'login']);
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/shop', [ShopController::class, 'index']);
+
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
+
 Route::get('/dashboard/product', [ProductController::class, 'index'])->middleware(['auth'])->name('dashboard.product');
+Route::get('/dashboard/product/add', [ProductController::class, 'add'])->middleware(['auth'])->name('dashboard.product.add');
+Route::post('/dashboard/product/store', [ProductController::class, 'store'])->middleware(['auth'])->name('dashboard.product.store');
 require __DIR__.'/auth.php';
