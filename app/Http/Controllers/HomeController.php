@@ -11,6 +11,6 @@ class HomeController extends Controller
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function index() {
-        return view('home.index'); 
+        return redirect('dashboard');
     }
 }

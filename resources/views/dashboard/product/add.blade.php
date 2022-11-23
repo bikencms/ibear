@@ -4,12 +4,23 @@
   @include('dashboard.product.header')
   <div class="col-12 grid-margin stretch-card">
     <div class="card">
+      @if(Session::has('success'))
+          <div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert">×</button>
+              {{Session::get('success')}}
+          </div>
+      @elseif(Session::has('failed'))
+          <div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert">×</button>
+              {{Session::get('failed')}}
+          </div>
+      @endif
       <div class="card-body">
         <h4 class="card-title">Upload product</h4>
         <p class="card-description">
           Fill and select
         </p>
-        <form class="forms-sample" action="{{ route('dashboard.product.store') }}" method="POST">
+        <form class="forms-sample" action="{{ route('dashboard.product.store') }}" method="POST" enctype="multipart/form-data">
           @csrf
           <div class="form-group">
             <label for="exampleInputName1">Name</label>
@@ -22,14 +33,14 @@
           </div>
           <div class="form-group">
             <label>Image upload</label>
-            <input type="file" name="img[]" class="file-upload-default">
-            @error('img')
+            <input type="file" name="image" class="file-upload-default">
+            @error('image')
               <span class="invalid-feedback" role="alert">
                   <strong>{{ $message }}</strong>
               </span>
             @enderror
             <div class="input-group col-xs-12">
-              <input type="text" class="form-control file-upload-info @error('img') is-invalid @enderror" disabled="" placeholder="Upload Image">
+              <input type="text" class="form-control file-upload-info @error('image') is-invalid @enderror" disabled="" placeholder="Upload Image">
               <span class="input-group-append">
                 <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
               </span>
