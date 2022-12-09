@@ -21,6 +21,7 @@ Route::get('/register', [RegisteredUserController::class, 'create']);
 Route::get('/login', [LoginController::class, 'login']);
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/shop', [ShopController::class, 'index']);
+Route::get('/shop/{id}', [ShopController::class, 'shop'])->name('shop.detail');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
 

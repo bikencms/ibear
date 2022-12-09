@@ -35,6 +35,19 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+div {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
 body {
 	line-height: 1;
 }

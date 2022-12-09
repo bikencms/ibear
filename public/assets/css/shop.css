@@ -1,0 +1,116 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+main {
+  background-image: url("../images/background_desktop.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#shop header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100px;
+  float: right;
+  margin: 30px 40px 0 0;
+  border-radius: 5px;
+  background: transparent;
+}
+
+#shop header nav ul {
+  padding: 5px 0;
+}
+
+#shop .section-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: white;
+}
+
+.section-2 {
+  text-align: center;
+}
+
+.section-2 .search {
+  margin: 40px;
+}
+
+.section-2 .search .search-inner {
+  display: inline-block;
+  padding: 5px;
+  border-bottom: 1px solid #5a5a5a;
+}
+
+.section-2 .search .search-inner input {
+  vertical-align: middle;
+}
+
+.section-2 .search .search-inner input[type=text] {
+  border: none;
+  padding: 7px;
+}
+
+.product-wrapper {
+  text-align: center;
+}
+
+.product-wrapper .product-wrapper-inner {
+  margin: 20px;
+}
+
+.product-wrapper .product-wrapper-inner .product {
+  width: 25%;
+  display: inline-block;
+  padding: 20px;
+  vertical-align: top;
+}
+
+.product-wrapper .product-wrapper-inner .product .product-inner {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.product-wrapper .product-wrapper-inner .product .product-inner:hover {
+  opacity: 0.8;
+}
+
+.product-wrapper .product-wrapper-inner .product .product-inner p {
+  padding: 5px 0;
+}
+
+.product-wrapper .product-wrapper-inner .product .product-inner p img, .product-wrapper .product-wrapper-inner .product .product-inner p a {
+  vertical-align: middle;
+}
+
+.product-wrapper .product-wrapper-inner .product .product-inner a:hover {
+  text-decoration: underline;
+}
+
+.red {
+  color: #d23369
+}
+
+.margin-bottom-10px {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .product-wrapper .product-wrapper-inner .product {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-wrapper .product-wrapper-inner .product {
+    width: 50%;
+  }
+}
