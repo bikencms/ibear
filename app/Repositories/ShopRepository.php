@@ -29,7 +29,7 @@ class ShopRepository
     {
         return $this->model
                     ->select([
-                        '*'
+                        'products.*', 'users.name as user_name'
                     ])
                     ->leftJoin('users', 'users.id', '=', 'user_id')
                     ->where('user_id', $shopId)->get();
