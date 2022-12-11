@@ -2,6 +2,7 @@ body, html {
   height: 100%;
   margin: 0;
 }
+
 main {
   background-image: url("../images/background_desktop.jpg");
   height: 100%; 
@@ -102,6 +103,12 @@ main {
 .margin-bottom-10px {
   margin-bottom: 10px;
 }
+
+.product-wrapper .product-wrapper-inner .product .product-inner .product-detail {
+  text-align: left;
+  padding: 10px 0 10px 10px;
+}
+
 
 @media screen and (max-width: 1024px) {
   .product-wrapper .product-wrapper-inner .product {

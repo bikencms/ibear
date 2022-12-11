@@ -6,6 +6,7 @@
 
     <title>Home page</title>
     <link rel="stylesheet" href="{{ url('assets/css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/css/boostrap.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/shop.css') }}">
     <!-- Google tag (gtag.js) -->
@@ -64,12 +65,15 @@
         @foreach($products as $product)<div class="product">
                 <div class="product-inner">
                     <img src="{{ url('uploads/') }}/{{ $product->image }}" alt="{{ $product->name }}" width="100%">
-                    <p><a href="">{{ $product->name }}</a></p>
-                    <p class="red">{{ $product->price }}</p>
-                    <p class="margin-bottom-10px"><img src="{{ url('assets/images/shop-store.svg') }}" alt="shop store" width="20px"><a href="{{ route('shop.detail', ['id'=>$product->user_id]) }}">{{ $product->user_name }}</a></p>
+                    <div class="product-detail">
+                        <p><a href="">{{ $product->name }}</a></p>
+                        <p class="red">{{ number_format($product->price, 0, '', '.'); }}đ</p>
+                        <p class="margin-bottom-10px"><img src="{{ url('assets/images/shop-store.svg') }}" alt="shop store" width="20px"> <a href="{{ route('shop.detail', ['id'=>$product->user_id]) }}">{{ $product->user_name }}</a></p>
+                    </div>
                 </div>
             </div>@endforeach
-    </div> 
+        {!! $products->links() !!}
+    </div>
 </section>
 <footer class="text-center">
     <p>© <?= date('Y') ?> - Toàn bộ bản quyền thuộc ibear.vn</p>

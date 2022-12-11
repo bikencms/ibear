@@ -2,6 +2,8 @@
 
 namespace App\Http\Services;
 use App\Repositories\ShopRepository;
+use Illuminate\Pagination\LengthAwarePaginator as Paginator;
+use Illuminate\Support\Collection;
 class ShopService
 {
 

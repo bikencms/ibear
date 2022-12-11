@@ -25,11 +25,11 @@ class ShopController extends Controller
 
     public function index() {
         $products = $this->shopService->getAllProduct();
-        return view('shop', [ 'products' => $products ]);
+        return view('shop.shop', [ 'products' => $products ]);
     }
 
     public function shop($id) {
         $products = $this->shopService->getShopById($id);
-        return view('shop', [ 'products' => $products ]);
+        return view('shop.shop', [ 'products' => $products ]);
     }
 }
