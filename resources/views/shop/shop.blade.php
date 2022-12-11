@@ -46,9 +46,9 @@
             </ul>
         </nav>
     </header>
-    <section class="section-1">
+    <!-- <section class="section-1">
         <h2>Shop ibear.vn</h2>
-    </section>
+    </section> -->
 </main>
 <section class="section-2">
     <div class="search">
