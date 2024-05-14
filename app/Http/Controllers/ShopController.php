@@ -6,6 +6,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use App\Http\Services\ShopService;
+use Carbon\Carbon;
 
 class ShopController extends Controller
 {
@@ -24,7 +25,13 @@ class ShopController extends Controller
     }
 
     public function index() {
-        $products = $this->shopService->getAllProduct();
+        if( isset($_GET['date']) && $_GET['date'] != '' ) {
+            $date = $_GET['date'];
+            $date = Carbon::createFromFormat('d/m/Y', $date)->toDateTimeString();
+        } else {
+            $date = null;
+        }
+        $products = $this->shopService->getAllProduct($date);
         return view('shop.shop', [ 'products' => $products ]);
     }
 

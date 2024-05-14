@@ -20,9 +20,9 @@ class ShopService
     * @param integer $shopId
     * @return array
     */
-    public function getAllProduct()
+    public function getAllProduct($date = null)
     {
-        return $this->shopRepository->getAllProduct();
+        return $this->shopRepository->getAllProduct($date);
     }
 
     /**

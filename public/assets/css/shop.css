@@ -47,7 +47,6 @@ main {
 .section-2 .search .search-inner {
   display: inline-block;
   padding: 5px;
-  border-bottom: 1px solid #5a5a5a;
 }
 
 .section-2 .search .search-inner input {
@@ -86,6 +85,7 @@ main {
 
 .product-wrapper .product-wrapper-inner .product .product-inner p {
   padding: 5px 0;
+  text-align: center;
 }
 
 .product-wrapper .product-wrapper-inner .product .product-inner p img, .product-wrapper .product-wrapper-inner .product .product-inner p a {

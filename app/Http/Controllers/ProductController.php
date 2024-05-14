@@ -14,7 +14,7 @@ class ProductController extends Controller
 
     protected $redirect = '/dashboard/product';
     public function index() {
-        $products = Product::where('user_id', Auth::id())->get();
+        $products = Product::paginate(20);
         return view('dashboard.product.index', [ 'products' => $products]); 
     }
 

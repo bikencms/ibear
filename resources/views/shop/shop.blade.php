@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="{{ url('assets/css/reset.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/boostrap.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
+    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="{{ url('css/vertical-layout-light/style.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/shop.css') }}">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R0GX9KF0TH"></script>
@@ -15,15 +18,18 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
+
         gtag('config', 'G-R0GX9KF0TH');
     </script>
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
 </head>
 <body>
 <main id="shop">
     <header>
         <nav>
             <ul>
-                <li class="icon user">
+                <!-- <li class="icon user">
                     <ul class="icon-user">
                         @auth
                             <li>
@@ -41,7 +47,7 @@
                             <li><a href="{{ route('login') }}"><img src="{{ url('assets/images/login.svg') }}" alt="User"></a></li>
                         @endguest
                     </ul>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </header>
@@ -52,29 +58,49 @@
 <section class="section-2">
     <div class="search">
         <div class="search-inner">
-            <form action="/shop" method="GET">
-                <input type="text" placeholder="Tìm kiếm sản phẩm" name="name"> 
-                <input type="image" src="{{ url('assets/images/search.svg') }}"  width="24px">
+            <form action="{{ route('shop_index') }}" method="GET">
+                <input type="hidden" name="page" value="<?= isset($_GET['page']) ? $_GET['page'] : 1 ?>">
+                <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
+                    <span class="input-group-addon input-group-prepend border-right">
+                        <span class="icon-calendar input-group-text calendar-icon"></span>
+                    </span>
+                    <input type="text" class="form-control" name="date" placeholder="Tìm theo tên" autocomplete="off">
+                    &nbsp;&nbsp;
+                    <input type="image" src="{{ url('assets/images/search.svg') }}"  width="24px">
+                </div>
             </form>
         </div>
     </div>
 </section>
 <section class="product-wrapper">
     <div class="product-wrapper-inner">
-        @foreach($products as $product)<div class="product">
+        @foreach($products as $key => $product)
+            <div class="product">
                 <div class="product-inner">
-                    <img src="{{ url('uploads/') }}/{{ $product->image }}" alt="{{ $product->name }}" width="100%">
+                    <img src="{{ $product->image }}" alt="{{ $product->name }}" width="100%">
                     <div class="product-detail">
                         <p><a href="">{{ $product->name }}</a></p>
-                        <p class="red">{{ number_format($product->price, 0, '', '.'); }}đ</p>
-                        <p class="margin-bottom-10px"><img src="{{ url('assets/images/shop-store.svg') }}" alt="shop store" width="20px"> <a href="{{ route('shop.detail', ['id'=>$product->user_id]) }}">{{ $product->user_name }}</a></p>
+                        <?php 
+                            $dt = \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $product->created_at);
+                            $dt = new \Carbon\Carbon($dt->toDateString());
+                            $newDate =  $dt->format('d/m/Y');
+                        ?>
+                        <p>Ngày đăng {{ $newDate }}</p>
                     </div>
                 </div>
-            </div>@endforeach
-        {!! $products->links() !!}
+            </div>
+        @endforeach
+        {!! $products->appends(request()->input())->links() !!}
     </div>
 </section>
 <footer class="text-center">
     <p>© <?= date('Y') ?> - Toàn bộ bản quyền thuộc ibear.vn</p>
 </footer>
+<script>
+      $('#datepicker-popup').datepicker(
+        {
+            format: 'dd/mm/yyyy'
+        }
+      );
+    </script>
 </body>
