@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="{{ url('css/vertical-layout-light/style.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/shop.css') }}">
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R0GX9KF0TH"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TV45K6YQCE"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-R0GX9KF0TH');
+    gtag('config', 'G-TV45K6YQCE');
     </script>
     <script src="vendors/js/vendor.bundle.base.js"></script>
     <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
