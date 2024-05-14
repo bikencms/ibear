@@ -28,6 +28,11 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: white !important;
+    background: inherit !important;
+}
+
 header nav {
     padding: 0 10px;
 }

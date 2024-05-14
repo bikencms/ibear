@@ -11,7 +11,7 @@ main {
   background-size: cover;
 } */
 
-#shop header {
+/* #shop header {
   position: fixed;
   right: 0;
   top: 0;
@@ -20,7 +20,7 @@ main {
   margin: 30px 40px 0 0;
   border-radius: 5px;
   background: transparent;
-}
+} */
 
 #shop header nav ul {
   padding: 5px 0;

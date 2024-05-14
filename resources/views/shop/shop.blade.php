@@ -4,9 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home page</title>
+    <title>ibear.vn 🥰| Shop gấu bông</title>
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ibear.vn" />
+    <meta property="og:title" content="ibear.vn 🥰| Shop gấu bông">
+    <meta property="og:description" content="Alway smile 🥰">
+    <meta property="og:image" content="https://ibear.vn/assets/images/logo_black.png">
+
+    <meta property="fb:app_id" content="your_app_id" />
+
     <link rel="stylesheet" href="{{ url('assets/css/reset.css') }}">
-    <link rel="stylesheet" href="{{ url('assets/css/boostrap.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
     <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
@@ -29,9 +38,16 @@
     <header>
         <nav>
             <ul>
-                <!-- <li class="icon user">
-                    <ul class="icon-user">
+                <li class="logo">
+                    <a href="#"><img src="{{ url('assets/images/logo_black.png') }}" alt="Logo"></a>
+                </li>
+                <li class="link shop">
+                    <h1><a href="#">Shop gấu bông</a></h1>
+                </li>
+                <li class="icon user">
+                    <!-- <ul class="icon-user">
                         @auth
+                            <li><img src="{{ url('assets/images/my-shop.svg') }}" alt="User"></li>
                             <li>
                                 <a href="{{ route('dashboard') }}"></a>/<a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
@@ -43,11 +59,11 @@
                                 </form>
                             </li>
                         @else
-                            <li><a href="{{ route('register') }}"><img src="{{ url('assets/images/user-registry.svg') }}" alt="User"></a></li>
-                            <li><a href="{{ route('login') }}"><img src="{{ url('assets/images/login.svg') }}" alt="User"></a></li>
+                            <li><img src="{{ url('assets/images/user.svg') }}" alt="User"></li>
+                            <li><a href="{{ route('register') }}">ĐĂNG KÝ</a>/<a href="{{ route('login') }}">ĐĂNG NHẬP</a></li>
                         @endguest
-                    </ul>
-                </li> -->
+                    </ul> -->
+                </li>
             </ul>
         </nav>
     </header>
