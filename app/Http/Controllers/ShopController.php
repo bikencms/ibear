@@ -38,5 +38,6 @@ class ShopController extends Controller
     public function shop($id) {
         $products = $this->shopService->getShopById($id);
         return view('shop.shop', [ 'products' => $products ]);
+        
     }
 }
