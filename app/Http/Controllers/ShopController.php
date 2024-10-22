@@ -7,6 +7,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use App\Http\Services\ShopService;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Cache;
 
 class ShopController extends Controller
 {
@@ -31,7 +32,12 @@ class ShopController extends Controller
         } else {
             $date = null;
         }
-        $products = $this->shopService->getAllProduct($date);
+        if( Cache::has('product_homepage'. $date)) {
+            $products = Cache::get('product_homepage'. $date);
+        } else {
+            $products = $this->shopService->getAllProduct($date);
+            Cache::forever('product_homepage'. $date, $products);
+        }
         return view('shop.shop', [ 'products' => $products ]);
     }
 

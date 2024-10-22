@@ -134,6 +134,10 @@ sup {
   top: -0.5em;
 }
 
+.pagination {
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 1024px) {
   .product-wrapper .product-wrapper-inner .product {
     width: 24%;
