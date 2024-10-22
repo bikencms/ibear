@@ -2,25 +2,6 @@ body, html {
   height: 100%;
   margin: 0;
 }
-/* 
-main {
-  background-image: url("../images/background_desktop.jpg");
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
-/* #shop header {
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100px;
-  float: right;
-  margin: 30px 40px 0 0;
-  border-radius: 5px;
-  background: transparent;
-} */
 
 #shop header nav ul {
   padding: 5px 0;
@@ -41,7 +22,7 @@ main {
 }
 
 .section-2 .search {
-  margin: 40px;
+  margin: 20px;
 }
 
 .section-2 .search .search-inner {
@@ -109,6 +90,14 @@ main {
   padding: 10px 0 10px 10px;
 }
 
+.background-brown {
+  background-color: rgb(245, 245, 250);
+}
+
+.contact a {
+  text-decoration: none;
+}
+
 
 @media screen and (max-width: 1024px) {
   .product-wrapper .product-wrapper-inner .product {
@@ -118,6 +107,10 @@ main {
 
 @media screen and (max-width: 768px) {
   .product-wrapper .product-wrapper-inner .product {
-    width: 50%;
+    width: 49%;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.33rem;
   }
 }
