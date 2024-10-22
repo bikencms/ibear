@@ -93,9 +93,9 @@
         @foreach($products as $key => $product)
             <div class="product">
                 <div class="product-inner">
-                    <img src="{{ $product->image }}" alt="{{ $product->name }}" width="100%">
+                    <img src="/uploads/{{ $product->image }}" alt="{{ $product->name }}" width="100%">
                     <div class="product-detail">
-                        <p><a href="">{{ $product->name }}</a></p>
+                        <p>{{ $product->name }}</p>
                         <?php 
                             $dt = \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $product->created_at);
                             $dt = new \Carbon\Carbon($dt->toDateString());

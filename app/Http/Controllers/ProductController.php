@@ -35,7 +35,7 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required|max:30',
             'price' => 'required|numeric',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048'
         ]);
 
         if ($request->isMethod('post')) {
