@@ -48,9 +48,9 @@ body, html {
 }
 
 .product-wrapper .product-wrapper-inner .product {
-  width: 25%;
+  width: 15.66%;
   display: inline-block;
-  padding: 20px;
+  padding: 10px 6px;
   vertical-align: top;
 }
 
@@ -65,8 +65,9 @@ body, html {
 }
 
 .product-wrapper .product-wrapper-inner .product .product-inner p {
-  padding: 5px 0;
-  text-align: center;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #27272a;
 }
 
 .product-wrapper .product-wrapper-inner .product .product-inner p img, .product-wrapper .product-wrapper-inner .product .product-inner p a {
@@ -90,6 +91,30 @@ body, html {
   padding: 10px 0 10px 10px;
 }
 
+.product-wrapper .product-wrapper-inner .product .product-inner .product-image {
+  max-height: 180px;
+  height: 180px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.product-wrapper .product-wrapper-inner .product .product-inner .product-image img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+}
+
 .background-brown {
   background-color: rgb(245, 245, 250);
 }
@@ -98,17 +123,45 @@ body, html {
   text-decoration: none;
 }
 
+.price {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 600;
+    color: rgb(255, 66, 78) !important;
+}
+
+sup {
+  top: -0.5em;
+}
 
 @media screen and (max-width: 1024px) {
   .product-wrapper .product-wrapper-inner .product {
-    width: 33.33%;
+    width: 24%;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .product-wrapper .product-wrapper-inner {
+    margin: 10px;
+  }
+  .product-wrapper .product-wrapper-inner .product .product-inner .product-image {
+    max-height: 120px;
+    height: 120px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    position: relative;
+  }
+  .product-wrapper .product-wrapper-inner .product .product-inner .product-detail {
+    padding: 10px 0 10px 10px;
+  }
+
   .product-wrapper .product-wrapper-inner .product {
     width: 49%;
-    padding: 10px;
+    padding: 10px 5px;
+  }
+
+  .product-wrapper .product-wrapper-inner .product .product-inner p {
+    font-size: 0.812rem;
   }
   h1 {
     font-size: 1.33rem;

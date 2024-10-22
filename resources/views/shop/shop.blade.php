@@ -93,7 +93,9 @@
         @foreach($products as $key => $product)
             <div class="product">
                 <div class="product-inner">
-                    <img src="/uploads/{{ $product->image }}" alt="{{ $product->name }}" width="100%">
+                    <div class="product-image">
+                        <img src="/uploads/{{ $product->image }}" alt="{{ $product->name }}">
+                    </div>
                     <div class="product-detail">
                         <p>{{ $product->name }}</p>
                         <?php 
@@ -101,8 +103,7 @@
                             $dt = new \Carbon\Carbon($dt->toDateString());
                             $newDate =  $dt->format('d/m/Y');
                         ?>
-                        <p>{{ $product->price }}đ</p>
-                        <p>Ngày đăng {{ $newDate }}</p>
+                        <p class="price">{{ number_format($product->price, 0, '.') }}<sup>₫</sup></p>
                     </div>
                 </div>
             </div>
