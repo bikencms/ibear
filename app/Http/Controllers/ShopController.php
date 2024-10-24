@@ -32,11 +32,18 @@ class ShopController extends Controller
         } else {
             $date = null;
         }
-        if( Cache::has('product_homepage'. $date)) {
-            $products = Cache::get('product_homepage'. $date);
+
+        if( isset($_GET['page']) && $_GET['page'] != '' ) {
+            $page = $_GET['page'];
+        } else {
+            $page = 1;
+        }
+
+        if( Cache::has($page.'product_homepage'. $date)) {
+            $products = Cache::get($page.'product_homepage'. $date);
         } else {
             $products = $this->shopService->getAllProduct($date);
-            Cache::forever('product_homepage'. $date, $products);
+            Cache::forever($page.'product_homepage'. $date, $products);
         }
         return view('shop.shop', [ 'products' => $products ]);
     }

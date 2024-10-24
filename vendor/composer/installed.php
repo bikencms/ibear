@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '08e9aac77e15bc141a779d468988a9a5eb9f4029',
+        'reference' => '11ee14614acd2d802d17a0d8d4915444395724f5',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -415,7 +415,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '08e9aac77e15bc141a779d468988a9a5eb9f4029',
+            'reference' => '11ee14614acd2d802d17a0d8d4915444395724f5',
             'dev_requirement' => false,
         ),
         'laravel/passport' => array(
@@ -804,6 +804,15 @@
             'aliases' => array(),
             'reference' => '851867efcbb6a1b992ec515c71cdcf20d895e9d2',
             'dev_requirement' => true,
+        ),
+        'predis/predis' => array(
+            'pretty_version' => 'v2.2.2',
+            'version' => '2.2.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../predis/predis',
+            'aliases' => array(),
+            'reference' => 'b1d3255ed9ad4d7254f9f9bba386c99f4bb983d1',
+            'dev_requirement' => false,
         ),
         'psr/container' => array(
             'pretty_version' => '2.0.2',
