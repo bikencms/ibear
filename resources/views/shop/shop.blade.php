@@ -15,11 +15,11 @@
     <link rel="canonical" href="https://ibear.vn"/>
 
     <link rel="stylesheet" href="{{ url('assets/css/reset.css') }}">
-    <link rel="stylesheet" href="{{ url('assets/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/css/bootstrap.css') }}" media="all">
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
-    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="{{ url('css/vertical-layout-light/style.css') }}">
+    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" >
+    <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css" media="all">
+    <link rel="stylesheet" href="{{ url('css/vertical-layout-light/style.css') }}" media="all">
     <link rel="stylesheet" href="{{ url('assets/css/shop.css') }}">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TV45K6YQCE"></script>
@@ -30,7 +30,6 @@
 
     gtag('config', 'G-TV45K6YQCE');
     </script>
-    <script src="vendors/js/vendor.bundle.base.js"></script>
     <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
 </head>
 <body>
