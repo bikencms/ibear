@@ -26,7 +26,7 @@
     <noscript><link rel="stylesheet" href="{{ url('vendors/simple-line-icons/css/simple-line-icons.css') }}"></noscript>
 
     <!-- <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css"  media="all"> -->
-    <link rel="stylesheet" href="{{ url('css/vertical-layout-light/style.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url('css/vertical-layout-light/style.css') }}"> -->
     <link rel="stylesheet" href="{{ url('assets/css/shop.css') }}">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TV45K6YQCE"></script>
