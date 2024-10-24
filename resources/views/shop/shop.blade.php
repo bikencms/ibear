@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>ibear.vn 🥰| Shop gấu bông</title>
-    
+    <meta name="description" content="ibear.vn 🥰| Shop gấu bông | Chuyên sỉ, lẻ các loại gấu bông, blind box">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ibear.vn" />
     <meta property="og:title" content="ibear.vn 🥰| Shop gấu bông">
     <meta property="og:description" content="Alway smile 🥰">
     <meta property="og:image" content="https://ibear.vn/assets/images/logo_black.png">
 
-    <meta property="fb:app_id" content="your_app_id" />
+    <link rel="canonical" href="https://ibear.vn"/>
 
     <link rel="stylesheet" href="{{ url('assets/css/reset.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/bootstrap.css') }}">
@@ -82,7 +82,7 @@
                     </span>
                     <input type="text" class="form-control" name="date" placeholder="Tìm theo ngày" autocomplete="off">
                     &nbsp;&nbsp;
-                    <input type="image" src="{{ url('assets/images/search.svg') }}"  width="24px">
+                    <input type="image" alt="search image" src="{{ url('assets/images/search.svg') }}"  width="24px">
                 </div>
             </form>
         </div>
@@ -114,7 +114,7 @@
 <section class="section-2">
     <div class="search">
         <div class="search-inner contact">
-            <h3>Các kênh bán hàng</h3>
+            <h2>Các kênh bán hàng</h2>
             <p>
                 <a rel="nofollow noreferrer" href="https://www.facebook.com/IBEARVNN" class="icon" target="_blank" title="Facebook">
                     <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 16.6665C0 7.82995 7.16344 0.666504 16 0.666504C24.8366 0.666504 32 7.82995 32 16.6665C32 25.5031 24.8366 32.6665 16 32.6665C7.16344 32.6665 0 25.5031 0 16.6665Z" fill="#3B5998"></path><path d="M17.6676 26.0742V17.3693H20.0706L20.389 14.3696H17.6676L17.6717 12.8682C17.6717 12.0858 17.7461 11.6666 18.8698 11.6666H20.372V8.6665H17.9687C15.082 8.6665 14.066 10.1217 14.066 12.5689V14.3699H12.2666V17.3696H14.066V26.0742H17.6676Z" fill="white"></path></svg>
