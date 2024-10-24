@@ -68,7 +68,7 @@ body, html {
   text-align: left;
   margin-bottom: 5px;
   color: #27272a;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .product-wrapper .product-wrapper-inner .product .product-inner p img, .product-wrapper .product-wrapper-inner .product .product-inner p a {
