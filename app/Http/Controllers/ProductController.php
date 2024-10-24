@@ -8,6 +8,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use LastModified;
 class ProductController extends Controller
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
@@ -50,6 +51,7 @@ class ProductController extends Controller
             ]);
 
             if(!is_null($newProduct)) {
+                LastModified::set($newProduct->created_at);
                 return back()->with('success','Success! product uploaded');
             } else {
                 return back()->with("failed", "Alert! product not uploaded");
