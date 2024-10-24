@@ -15,10 +15,17 @@
     <link rel="canonical" href="https://ibear.vn"/>
 
     <link rel="stylesheet" href="{{ url('assets/css/reset.css') }}">
-    <link rel="stylesheet" href="{{ url('assets/css/bootstrap.css') }}" media="all">
+
+    <link rel="preload" href="{{ url('assets/css/bootstrap.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ url('assets/css/bootstrap.css') }}"></noscript>
+
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
     <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css"  media="all">
+
+    <link rel="preload" href="{{ url('vendors/simple-line-icons/css/simple-line-icons.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ url('vendors/simple-line-icons/css/simple-line-icons.css') }}"></noscript>
+
+    <!-- <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css"  media="all"> -->
     <!-- <link rel="stylesheet" href="{{ url('css/vertical-layout-light/style.css') }}"  media="all"> -->
     <link rel="stylesheet" href="{{ url('assets/css/shop.css') }}">
     <!-- Google tag (gtag.js) -->
@@ -39,7 +46,7 @@
         <nav>
             <ul>
                 <li class="logo">
-                    <a href="#"><img src="{{ url('assets/images/logo_black.png') }}" alt="Logo"></a>
+                    <a href="#"><img src="{{ url('assets/images/logo_black.webp') }}" alt="Logo"></a>
                 </li>
                 <li class="link shop">
                     <h1><a href="#">Shop gấu bông</a></h1>
