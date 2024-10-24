@@ -82,7 +82,7 @@
                     </span>
                     <input type="text" class="form-control" name="date" placeholder="Tìm theo ngày" autocomplete="off">
                     &nbsp;&nbsp;
-                    <input type="image" alt="search image" src="{{ url('assets/images/search.svg') }}"  width="24px">
+                    <input type="image" alt="search image" src="https://ibear.vn/assets/images/search.svg"  width="24px">
                 </div>
             </form>
         </div>
