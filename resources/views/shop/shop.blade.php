@@ -99,9 +99,7 @@
         @foreach($products as $key => $product)
             <div class="product">
                 <div class="product-inner">
-                    <div class="product-image">
-                        <img src="/uploads/{{ $product->image }}" alt="{{ $product->name }}">
-                    </div>
+                    <img src="/uploads/{{ $product->image }}" alt="{{ $product->name }}" width="100%">
                     <div class="product-detail">
                         <p>{{ $product->name }}</p>
                         <?php 

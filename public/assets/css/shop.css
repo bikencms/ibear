@@ -58,10 +58,17 @@ body, html {
   border: 1px solid #ccc;
   border-radius: 7px;
   cursor: pointer;
+  padding: 5px;
 }
 
 .product-wrapper .product-wrapper-inner .product .product-inner:hover {
   opacity: 0.8;
+}
+
+.product-wrapper .product-wrapper-inner .product .product-inner img {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  cursor: pointer;
 }
 
 .product-wrapper .product-wrapper-inner .product .product-inner p {
@@ -89,31 +96,7 @@ body, html {
 
 .product-wrapper .product-wrapper-inner .product .product-inner .product-detail {
   text-align: left;
-  padding: 10px 0 10px 10px;
-}
-
-.product-wrapper .product-wrapper-inner .product .product-inner .product-image {
-  max-height: 180px;
-  height: 180px;
-  overflow: hidden;
-  margin-bottom: 8px;
-  position: relative;
-}
-
-.product-wrapper .product-wrapper-inner .product .product-inner .product-image img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  -o-object-fit: cover;
-  object-fit: cover;
-  position: absolute;
+  padding-top: 10px;
 }
 
 .background-brown {
@@ -148,13 +131,6 @@ sup {
 @media screen and (max-width: 768px) {
   .product-wrapper .product-wrapper-inner {
     margin: 10px;
-  }
-  .product-wrapper .product-wrapper-inner .product .product-inner .product-image {
-    max-height: 120px;
-    height: 120px;
-    overflow: hidden;
-    margin-bottom: 8px;
-    position: relative;
   }
   .product-wrapper .product-wrapper-inner .product .product-inner .product-detail {
     padding: 10px 0 10px 10px;
