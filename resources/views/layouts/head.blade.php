@@ -5,10 +5,10 @@
                     <a href="#"><img src="{{ url('assets/images/logo_black.png') }}" alt="Logo"></a>
                 </li>
                 <li class="link shop">
-                    <a href="#">CỬA HÀNG</a>
+                    <a href="#">IBEAR VN</a>
                 </li>
                 <li class="icon user">
-                    <ul class="icon-user">
+                    <!-- <ul class="icon-user">
                         @auth
                             <li><img src="{{ url('assets/images/my-shop.svg') }}" alt="User"></li>
                             <li>
@@ -25,7 +25,7 @@
                             <li><img src="{{ url('assets/images/user.svg') }}" alt="User"></li>
                             <li><a href="{{ route('register') }}">ĐĂNG KÝ</a>/<a href="{{ route('login') }}">ĐĂNG NHẬP</a></li>
                         @endguest
-                    </ul>
+                    </ul> -->
                 </li>
             </ul>
         </nav>

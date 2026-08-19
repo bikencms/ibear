@@ -341,9 +341,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{ route('dashboard.post') }}">
               <i class="menu-icon mdi mdi-owl"></i>
-              <span class="menu-title">Orders</span>
+              <span class="menu-title">Posts</span>
             </a>
           </li>
           <li class="nav-item nav-category">Setting</li>
